@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
 
 const Header: React.FC = () => {
+  const [shadowOnScroll, setShadowOnScroll] = useState(false);
+
+  const addShadowOnScroll = () => {
+    if (window.scrollY >= 80) {
+      setShadowOnScroll(true);
+    } else {
+      setShadowOnScroll(false);
+    }
+  };
+
+  window.addEventListener("scroll", addShadowOnScroll);
+
   return (
     <MainWrapper>
-      <div className="container">
+      <div className={shadowOnScroll ? "active" : "container"}>
         <div className="first-half">
           <LogoScroll to="/">GN</LogoScroll>
         </div>
@@ -39,10 +51,24 @@ const MainWrapper = styled.div`
     padding: 0 5rem;
   }
 
+  .active {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    padding: 0 5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    z-index: 4;
+  }
+
   .first-half {
     display: flex;
     flex: 0.5;
     align-self: flex-start;
+    margin-bottom: 1rem;
   }
 
   .second-half {
