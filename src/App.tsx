@@ -1,10 +1,15 @@
 import React from "react";
-import Header from "./components/Header/index";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 const App: React.FC = () => {
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={Home} exact />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 };
