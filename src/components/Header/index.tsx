@@ -30,6 +30,7 @@ const MainWrapper = styled.div`
   height: 40px;
 
   .container {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;

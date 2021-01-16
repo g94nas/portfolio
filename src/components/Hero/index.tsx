@@ -65,6 +65,7 @@ const MainWrapper = styled.div`
       color: #272727;
       justify-content: flex-start;
       font-family: "Calibri Light";
+      font-weight: 300;
       margin-bottom: 1.5rem;
       margin-bottom: 3rem;
     }
