@@ -10,10 +10,10 @@ const Header: React.FC = () => {
           <LogoScroll to="/">GN</LogoScroll>
         </div>
         <div className="second-half">
-          <LinkScroll to="/">Home</LinkScroll>
-          <LinkScroll to="/">Sobre Mí</LinkScroll>
-          <LinkScroll to="/">Proyectos</LinkScroll>
-          <LinkScroll to="/">Contacto</LinkScroll>
+          <LinkScroll to="/">HOME</LinkScroll>
+          <LinkScroll to="/">SOBRE MI</LinkScroll>
+          <LinkScroll to="/">PROYECTOS</LinkScroll>
+          <LinkScroll to="/">CONTACTO</LinkScroll>
         </div>
       </div>
     </MainWrapper>
@@ -35,7 +35,7 @@ const MainWrapper = styled.div`
     justify-content: center;
     height: fit-content;
     width: 100%;
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 
   .first-half {
@@ -76,7 +76,7 @@ const LinkScroll = styled(Link)`
   align-self: center;
   flex-direction: row;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 4rem;
   cursor: pointer;
   transition: 0.3s;
