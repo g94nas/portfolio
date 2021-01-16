@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./components/Header/index";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Header />

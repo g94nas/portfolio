@@ -5,14 +5,31 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Neutra", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: Neutra;
+  font-weight: bold;
+  src: url(./fonts/NeutraText/NeutraText-Bold.otf);
+}
+
+@font-face {
+  font-family: Calibri;
+  font-weight: regular;
+  src: url(./fonts/Calibri/Calibri.ttf);
+}
+
+@font-face {
+  font-family: Calibri Light;
+  font-weight: Light;
+  src: url(./fonts/Calibri/CalibriLight.ttf);
 }
