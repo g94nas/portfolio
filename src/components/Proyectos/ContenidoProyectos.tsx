@@ -67,13 +67,13 @@ const MainWrapper = styled.div<{ bg?: any }>`
 
   .container-left {
     display: flex;
-    flex: 0.6;
+    flex: 0.55;
     width: 100%;
     height: 400px;
 
     div {
       position: relative;
-      width: 90%;
+      width: 100%;
       height: 100%;
       box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.18);
 
@@ -103,10 +103,10 @@ const MainWrapper = styled.div<{ bg?: any }>`
     position: relative;
     display: flex;
     justify-content: space-between;
-    flex: 0.4;
+    flex: 0.45;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 350px;
 
     h2 {
       display: flex;
@@ -123,7 +123,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.25);
     width: 140%;
     position: absolute;
-    top: 18%;
+    top: 20%;
     right: 0;
     padding: 0.5rem;
     font-family: "Calibri";
@@ -157,6 +157,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
     font-size: 1rem;
     font-family: "Neutra";
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.25);
+    margin-left: 1rem;
   }
 
   .icons-div {
