@@ -33,12 +33,13 @@ const MainWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 12rem 7rem;
+    margin: 10rem 7rem;
+    margin-bottom: 3rem;
 
     h1 {
       position: relative;
       display: flex;
-      font-size: 5rem;
+      font-size: 8rem;
       color: #047469;
       margin-bottom: 1rem;
       width: 100%;
@@ -53,8 +54,8 @@ const MainWrapper = styled.div`
         font-weight: 300;
         font-size: 10rem;
         z-index: -10;
-        bottom: 1rem;
-        left: 10rem;
+        bottom: 4rem;
+        left: 15rem;
       }
     }
 

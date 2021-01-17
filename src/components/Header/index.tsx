@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
 
@@ -13,7 +13,10 @@ const Header: React.FC = () => {
     }
   };
 
-  window.addEventListener("scroll", addShadowOnScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", addShadowOnScroll);
+    return () => window.removeEventListener("scroll", addShadowOnScroll);
+  }, []);
 
   return (
     <MainWrapper>
