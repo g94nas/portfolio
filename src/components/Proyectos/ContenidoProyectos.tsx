@@ -86,7 +86,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(4, 116, 105, 0.7);
+        background-color: rgba(8, 120, 109, 0.71);
         z-index: 1;
         transition: 0.5s;
         cursor: pointer;

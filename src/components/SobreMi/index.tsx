@@ -52,7 +52,7 @@ const MainWrapper = styled.div`
         content: "O.1";
         font-family: "Calibri Light";
         font-weight: 300;
-        font-size: 10rem;
+        font-size: 15rem;
         z-index: -10;
         bottom: 4rem;
         left: 15rem;

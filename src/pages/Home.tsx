@@ -1,4 +1,5 @@
 import React from "react";
+import Contacto from "../components/Contacto";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Proyectos from "../components/Proyectos";
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <SobreMi />
       <Proyectos />
       <ContenidoProyectos />
+      <Contacto />
     </>
   );
 };
