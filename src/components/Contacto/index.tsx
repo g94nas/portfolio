@@ -1,8 +1,34 @@
+// @ts-nocheck
+
 import React from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com";
 import { ReactComponent as Hexagon } from "../../assets/hexagons.svg";
+import { RiSendPlaneFill } from "react-icons/ri";
 
+//@ts-ignore
 const Contacto: React.FC = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_m38zs77",
+        "template_hpwysqf",
+        e.target,
+        "user_8ZR59D2ytiUkttww4Ghfc"
+      )
+      .then(
+        (result: any) => {
+          console.log(result.text);
+        },
+        (error: any) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <MainWrapper>
       <div className="text-container">
@@ -10,21 +36,27 @@ const Contacto: React.FC = () => {
         <Hexagon />
       </div>
       <div className="container">
-        <form className="form-container">
+        <form onSubmit={sendEmail} className="form-container">
           <div className="info-container">
             <div className="info-container-fhalf">
               <label htmlFor="Nombre Completo">Nombre Completo</label>
-              <input type="text" required></input>
+              <input type="text" name="name" required></input>
             </div>
             <div className="info-container-fhalf">
               <label htmlFor="Email">Email</label>
-              <input type="text" required></input>
+              <input type="text" name="email" required></input>
             </div>
           </div>
           <div className="text-container">
             <label htmlFor="Mensaje">Mensaje</label>
-            <textarea name="mensaje" required></textarea>
+            <textarea name="message" required></textarea>
           </div>
+          <button type="submit">
+            <div>
+              <RiSendPlaneFill />
+            </div>
+            <p>Enviar</p>
+          </button>
         </form>
       </div>
     </MainWrapper>
@@ -40,6 +72,56 @@ const MainWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 18rem 7rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-family: "Neutra";
+    bottom: -1.25em;
+    left: 50%;
+    margin-left: -95px;
+    background-color: #fff;
+    border-radius: 2px;
+    min-height: 3rem;
+    position: absolute;
+    padding: 1em 2em 1em 6em;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+
+    &:hover {
+      transform: translateY(-7px);
+      transition: 0.5s;
+    }
+
+    div {
+      width: 3.5rem;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #047469;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 3px;
+
+      svg {
+        top: 20%;
+        left: 15%;
+        fill: #fff;
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
 
   svg {
     position: absolute;
@@ -147,6 +229,7 @@ const MainWrapper = styled.div`
     justify-content: center;
     width: 100%;
     height: 90%;
+    margin-bottom: 2rem;
 
     textarea {
       width: 100%;
