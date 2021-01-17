@@ -2,13 +2,17 @@ import React from "react";
 import styled from "styled-components/macro";
 import { GoMarkGithub } from "react-icons/go";
 import { IoMdOpen } from "react-icons/io";
+import Productivia from "../../assets/Productivia.jpg";
 
 const ContenidoProyectos: React.FC = () => {
   return (
     <MainWrapper>
       <div className="container-content">
         <div className="container-left">
-          <div></div>
+          <div>
+            <div></div>
+            <img src={Productivia} alt="Productivia background" />
+          </div>
         </div>
         <div className="container-right">
           <h2>Productivia</h2>
@@ -46,7 +50,7 @@ const ContenidoProyectos: React.FC = () => {
 
 export default ContenidoProyectos;
 
-const MainWrapper = styled.div`
+const MainWrapper = styled.div<{ bg?: any }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,13 +67,35 @@ const MainWrapper = styled.div`
 
   .container-left {
     display: flex;
-    flex: 0.5;
+    flex: 0.6;
     width: 100%;
+    height: 400px;
 
     div {
-      background-color: #047469;
+      position: relative;
       width: 90%;
-      height: 250px;
+      height: 100%;
+      box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.18);
+
+      img {
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 116, 105, 0.7);
+        z-index: 1;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: transparent;
+          transition: 0.5s;
+        }
+      }
     }
   }
 
@@ -77,7 +103,7 @@ const MainWrapper = styled.div`
     position: relative;
     display: flex;
     justify-content: space-between;
-    flex: 0.5;
+    flex: 0.4;
     flex-direction: column;
     width: 100%;
     height: 250px;
@@ -95,7 +121,7 @@ const MainWrapper = styled.div`
   .higher-text {
     display: flex;
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.25);
-    width: 120%;
+    width: 140%;
     position: absolute;
     top: 18%;
     right: 0;
@@ -105,6 +131,7 @@ const MainWrapper = styled.div`
     color: #242424;
     font-size: 1.1rem;
     background-color: #fff;
+    z-index: 3;
   }
 
   .button-div {
