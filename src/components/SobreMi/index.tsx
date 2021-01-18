@@ -33,7 +33,7 @@ const MainWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 10rem 7rem;
+    margin: 10rem 2rem;
     margin-bottom: 3rem;
 
     h1 {
@@ -43,6 +43,11 @@ const MainWrapper = styled.div`
       color: #047469;
       margin-bottom: 1rem;
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        margin-top: 2rem;
+      }
 
       ::after {
         position: absolute;
@@ -56,6 +61,12 @@ const MainWrapper = styled.div`
         z-index: -10;
         bottom: 4rem;
         left: 15rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 5rem;
+          left: 40%;
+          bottom: 3rem;
+        }
       }
     }
 
@@ -65,6 +76,10 @@ const MainWrapper = styled.div`
       font-family: "Calibri Light";
       font-weight: 200;
       color: #272727;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+      }
     }
   }
 
