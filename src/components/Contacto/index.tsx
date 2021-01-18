@@ -72,6 +72,7 @@ const MainWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 18rem 7rem;
+  margin-bottom: 11rem;
 
   button {
     display: flex;
