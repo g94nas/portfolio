@@ -46,6 +46,11 @@ const MainWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 12rem 7rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: 5rem 2rem;
+    }
   }
 
   .hero-first-half {
@@ -53,11 +58,19 @@ const MainWrapper = styled.div`
     flex-direction: column;
     flex: 0.5;
 
+    @media screen and (max-width: 768px) {
+      flex: 0;
+    }
+
     h1 {
       font-size: 6rem;
       color: #047469;
       justify-content: flex-start;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 3rem;
+      }
     }
 
     h2 {
@@ -68,6 +81,11 @@ const MainWrapper = styled.div`
       font-weight: 300;
       margin-bottom: 1.5rem;
       margin-bottom: 5rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
     }
 
     button {
@@ -90,6 +108,14 @@ const MainWrapper = styled.div`
         transition: 0.5s;
       }
 
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        justify-self: center;
+        width: 155px;
+        height: 2rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
       div {
         width: 3rem;
         height: 100%;
@@ -99,6 +125,11 @@ const MainWrapper = styled.div`
         justify-content: center;
         margin-right: 1.3rem;
         border-radius: 3px;
+        justify-self: flex-start;
+
+        @media screen and (max-width: 768px) {
+          width: 30px;
+        }
 
         svg {
           display: flex;
@@ -106,6 +137,11 @@ const MainWrapper = styled.div`
           fill: #fff;
           width: 2rem;
           height: 2rem;
+
+          @media screen and (max-width: 768px) {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
         }
       }
     }
@@ -119,6 +155,19 @@ const MainWrapper = styled.div`
     justify-content: center;
     flex: 0.5;
 
+    @media screen and (max-width: 768px) {
+      flex: 0;
+    }
+
+    svg {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin-top: 3rem;
+      }
+    }
+
     div {
       position: absolute;
       width: 300px;
@@ -126,45 +175,11 @@ const MainWrapper = styled.div`
       background-color: #047469;
       opacity: 0.9;
       border-radius: 10rem;
-    }
-  }
 
-  .button-div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .button-border {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    justify-self: flex-start;
-    border-top: 3px solid #047469;
-    border-right: 3px solid #047469;
-    border-bottom: 3px solid #047469;
-    cursor: pointer;
-    transition: 0.3s;
-
-    &:hover {
-      transform: translate(5px, -5px);
-      transition: 0.3s;
-    }
-
-    svg {
-      display: flex;
-      background-color: #047469;
-      color: #fff;
-      width: 40px;
-      height: 105%;
-      flex: 0.2;
-      padding-left: 5px;
-      padding-right: 5px;
+      @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 `;
@@ -175,4 +190,8 @@ const ButtonLink = styled(Link)`
   margin: 0;
   font-size: 1.5rem;
   color: #000;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
