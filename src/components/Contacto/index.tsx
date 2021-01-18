@@ -74,6 +74,11 @@ const MainWrapper = styled.div`
   margin: 18rem 7rem;
   margin-bottom: 11rem;
 
+  @media screen and (max-width: 768px) {
+    margin: 18rem 2rem;
+    margin-bottom: 6rem;
+  }
+
   button {
     display: flex;
     align-items: center;
@@ -131,6 +136,15 @@ const MainWrapper = styled.div`
     transform: rotate(10deg);
     left: -13rem;
     top: -7rem;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      transform: rotate(10deg);
+      left: -8rem;
+      top: -13rem;
+    }
   }
 
   h1 {
@@ -141,6 +155,12 @@ const MainWrapper = styled.div`
     color: #047469;
     margin-bottom: 4rem;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      font-size: 4rem;
+      margin-bottom: 0;
+    }
 
     ::after {
       position: absolute;
@@ -154,6 +174,12 @@ const MainWrapper = styled.div`
       z-index: -10;
       bottom: 2rem;
       right: 17rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 9rem;
+        left: 40%;
+        bottom: 1rem;
+      }
     }
   }
 
@@ -166,6 +192,10 @@ const MainWrapper = styled.div`
     height: 500px;
     background-color: #fff;
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.18);
+
+    @media screen and (max-width: 768px) {
+      box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.18);
+    }
   }
 
   .text-container {
@@ -193,9 +223,17 @@ const MainWrapper = styled.div`
     justify-content: space-between;
     align-items: flex-start;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .info-container-fhalf {
       position: relative;
       width: 48%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       label {
         position: absolute;

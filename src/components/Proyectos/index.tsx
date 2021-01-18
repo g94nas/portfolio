@@ -67,7 +67,7 @@ const MainWrapper = styled.div`
       @media screen and (max-width: 768px) {
         width: 100%;
         font-size: 4rem;
-        justify-content: flex-start;
+        justify-content: center;
       }
 
       ::after {

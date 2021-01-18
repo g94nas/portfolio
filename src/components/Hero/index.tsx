@@ -69,7 +69,7 @@ const MainWrapper = styled.div`
       margin-bottom: 1rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -83,7 +83,7 @@ const MainWrapper = styled.div`
       margin-bottom: 5rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 2rem;
       }
     }
@@ -113,7 +113,7 @@ const MainWrapper = styled.div`
         justify-self: center;
         width: 155px;
         height: 2rem;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
       }
 
       div {
@@ -156,6 +156,7 @@ const MainWrapper = styled.div`
     flex: 0.5;
 
     @media screen and (max-width: 768px) {
+      display: none;
       flex: 0;
     }
 

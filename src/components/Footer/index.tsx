@@ -86,6 +86,10 @@ const MainWrapper = styled.div`
     right: 10%;
     width: 300px;
     height: 300px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .second-hex {
@@ -94,5 +98,9 @@ const MainWrapper = styled.div`
     left: 10%;
     width: 300px;
     height: 300px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;

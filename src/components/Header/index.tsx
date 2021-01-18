@@ -115,12 +115,6 @@ const LogoScroll = styled(Link)`
     transform: translateY(-5px);
     color: #047469;
   }
-
-  /* @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
-    border: 4px solid #047469;
-    padding: 0.2rem;
-  } */
 `;
 
 const LinkScroll = styled(Link)`
