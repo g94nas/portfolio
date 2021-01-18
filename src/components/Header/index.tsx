@@ -60,6 +60,10 @@ const MainWrapper = styled.div`
     height: fit-content;
     width: 100%;
     padding: 0 5rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 1rem;
+    }
   }
 
   .active {
@@ -73,6 +77,10 @@ const MainWrapper = styled.div`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
     background-color: #fff;
     z-index: 4;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 1rem;
+    }
   }
 
   .first-half {
@@ -107,6 +115,12 @@ const LogoScroll = styled(Link)`
     transform: translateY(-5px);
     color: #047469;
   }
+
+  /* @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    border: 4px solid #047469;
+    padding: 0.2rem;
+  } */
 `;
 
 const LinkScroll = styled(Link)`
@@ -118,10 +132,20 @@ const LinkScroll = styled(Link)`
   margin-top: 4rem;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
 
   &:hover {
     transition: 0.3s;
     transform: translateY(-5px);
     color: #437772;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
