@@ -63,9 +63,9 @@ const MainWrapper = styled.div`
         left: 15rem;
 
         @media screen and (max-width: 768px) {
-          font-size: 5rem;
-          left: 40%;
-          bottom: 3rem;
+          font-size: 9rem;
+          left: 20%;
+          bottom: 1rem;
         }
       }
     }

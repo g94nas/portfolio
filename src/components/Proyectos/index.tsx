@@ -22,6 +22,11 @@ const MainWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 768px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   svg {
     position: absolute;
     transform: rotate(70deg);
@@ -29,6 +34,13 @@ const MainWrapper = styled.div`
     top: 3rem;
     width: 300px;
     height: 300px;
+
+    @media screen and (max-width: 768px) {
+      width: 200px;
+      height: 200px;
+      right: 20%;
+      top: -10%;
+    }
   }
 
   .container {
@@ -38,12 +50,25 @@ const MainWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      width: 100%;
+      margin-top: 14rem;
+      margin-bottom: 3rem;
+    }
+
     h1 {
       position: relative;
       display: flex;
       font-size: 8rem;
       color: #047469;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        font-size: 4rem;
+        justify-content: flex-start;
+      }
 
       ::after {
         position: absolute;
@@ -57,6 +82,12 @@ const MainWrapper = styled.div`
         z-index: -10;
         bottom: 1rem;
         left: -4rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 9rem;
+          left: 1%;
+          bottom: 5%;
+        }
       }
     }
   }
