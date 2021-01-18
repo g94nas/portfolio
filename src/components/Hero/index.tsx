@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { ReactComponent as Hexagons } from "../../assets/hexagons.svg";
 
@@ -15,12 +15,12 @@ const Hero: React.FC = () => {
             desarrollo y a la creación de web apps con interfaces limpias y
             experiencias de usuario memorables.
           </h2>
-          <div className="button-div">
-            <div className="button-border">
+          <button>
+            <div>
               <RiSendPlaneFill />
-              <ButtonLink to="/">Contactame</ButtonLink>
             </div>
-          </div>
+            <ButtonLink to="contacto">Contactame</ButtonLink>
+          </button>
         </div>
         <div className="hero-second-half">
           <Hexagons />
@@ -68,6 +68,50 @@ const MainWrapper = styled.div`
       font-weight: 300;
       margin-bottom: 1.5rem;
       margin-bottom: 3rem;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      border: none;
+      font-family: "Neutra";
+      background-color: #fff;
+      bottom: 13rem;
+      border-radius: 2px;
+      min-height: 3rem;
+      position: absolute;
+      padding: 0.5em 2em 0.5em 6em;
+      border-radius: 4px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: 0.5s;
+      outline: none;
+
+      &:hover {
+        transform: translateY(-7px);
+        transition: 0.5s;
+      }
+
+      div {
+        width: 3.3rem;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #047469;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+
+        svg {
+          display: flex;
+          justify-content: center;
+          fill: #fff;
+          width: 2rem;
+          height: 2rem;
+        }
+      }
     }
   }
 
@@ -130,13 +174,8 @@ const MainWrapper = styled.div`
 `;
 
 const ButtonLink = styled(Link)`
-  display: flex;
   text-decoration: none;
-  color: #272727;
-  justify-self: flex-start;
-  width: 100%;
-  flex: 0.9;
-  padding-left: 0.5rem;
-  font-size: 1.2rem;
-  transition: 0.3s;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000;
 `;
