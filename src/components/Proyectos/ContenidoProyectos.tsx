@@ -57,12 +57,20 @@ const MainWrapper = styled.div<{ bg?: any }>`
   justify-content: center;
   margin: 0 7rem 2rem 7rem;
 
+  @media screen and (max-width: 768px) {
+    margin: 0 2rem 2rem 2rem;
+  }
+
   .container-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+    }
   }
 
   .container-left {
@@ -71,15 +79,32 @@ const MainWrapper = styled.div<{ bg?: any }>`
     width: 100%;
     height: 400px;
 
+    @media screen and (max-width: 768px) {
+      flex: 1;
+      height: 300px;
+      width: 400px;
+      box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.18);
+    }
+
     div {
       position: relative;
       width: 100%;
       height: 100%;
-      box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.18);
+      box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.18);
+
+      @media screen and (max-width: 768px) {
+        box-shadow: none;
+      }
 
       img {
         object-fit: cover;
         object-position: center center;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          overflow: hidden;
+          height: 100%;
+          object-fit: contain;
+        }
       }
 
       div {
@@ -95,6 +120,10 @@ const MainWrapper = styled.div<{ bg?: any }>`
           background-color: transparent;
           transition: 0.5s;
         }
+        @media screen and (max-width: 768px) {
+          z-index: 0;
+          background-color: rgba(241, 241, 241, 0.91);
+        }
       }
     }
   }
@@ -108,6 +137,12 @@ const MainWrapper = styled.div<{ bg?: any }>`
     width: 100%;
     height: 350px;
 
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      flex: 0;
+      height: 100%;
+    }
+
     h2 {
       display: flex;
       justify-content: flex-end;
@@ -115,6 +150,11 @@ const MainWrapper = styled.div<{ bg?: any }>`
       font-size: 2rem;
       color: #047469;
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+        margin-top: 0.5rem;
+      }
     }
   }
 
@@ -132,6 +172,17 @@ const MainWrapper = styled.div<{ bg?: any }>`
     font-size: 1.1rem;
     background-color: #fff;
     z-index: 3;
+
+    @media screen and (max-width: 768px) {
+      width: 95%;
+      box-shadow: -7px 11px 10px rgba(0, 0, 0, 0.15);
+      font-size: 1rem;
+      background-color: rgba(241, 241, 241, 0.91);
+      font-family: "Calibri";
+      font-weight: 600;
+      color: #000;
+      top: 18%;
+    }
   }
 
   .button-div {
@@ -158,6 +209,12 @@ const MainWrapper = styled.div<{ bg?: any }>`
     font-family: "Neutra";
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.25);
     margin-left: 1rem;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      box-shadow: none;
+    }
   }
 
   .icons-div {
@@ -175,13 +232,11 @@ const MainWrapper = styled.div<{ bg?: any }>`
       margin-left: 1.5rem;
       text-decoration: none;
       fill: #000;
-      transition: ease-in-out 0.2s all;
 
-      &:hover {
-        width: 35px;
-        height: 35px;
-        fill: #047469;
-        transition: ease-in-out 0.2s all;
+      @media screen and (max-width: 768px) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: -3rem;
       }
     }
   }
