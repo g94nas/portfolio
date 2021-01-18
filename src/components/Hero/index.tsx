@@ -6,7 +6,7 @@ import { ReactComponent as Hexagons } from "../../assets/hexagons.svg";
 
 const Hero: React.FC = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="home">
       <div className="hero-container">
         <div className="hero-first-half">
           <h1>Guido Nasini</h1>

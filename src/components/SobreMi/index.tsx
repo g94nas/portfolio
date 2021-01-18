@@ -4,7 +4,7 @@ import { ReactComponent as Hexagons } from "../../assets/hexagons.svg";
 
 const SobreMi = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="sobre-mi">
       <div>
         <h1>Sobre Mí</h1>
         <h2>

@@ -22,13 +22,21 @@ const Header: React.FC = () => {
     <MainWrapper>
       <div className={shadowOnScroll ? "active" : "container"}>
         <div className="first-half">
-          <LogoScroll to="/">GN</LogoScroll>
+          <LogoScroll to="home">GN</LogoScroll>
         </div>
         <div className="second-half">
-          <LinkScroll to="/">HOME</LinkScroll>
-          <LinkScroll to="/">SOBRE MI</LinkScroll>
-          <LinkScroll to="/">PROYECTOS</LinkScroll>
-          <LinkScroll to="/">CONTACTO</LinkScroll>
+          <LinkScroll to="home" offset={-80}>
+            HOME
+          </LinkScroll>
+          <LinkScroll to="sobre-mi" offset={-120}>
+            SOBRE MI
+          </LinkScroll>
+          <LinkScroll to="proyectos" offset={-80}>
+            PROYECTOS
+          </LinkScroll>
+          <LinkScroll to="contacto" offset={-200}>
+            CONTACTO
+          </LinkScroll>
         </div>
       </div>
     </MainWrapper>

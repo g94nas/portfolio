@@ -30,7 +30,7 @@ const Contacto: React.FC = () => {
   }
 
   return (
-    <MainWrapper>
+    <MainWrapper id="contacto">
       <div className="text-container">
         <h1>Contacto</h1>
         <Hexagon />

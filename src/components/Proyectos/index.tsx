@@ -4,7 +4,7 @@ import { ReactComponent as Hexagon } from "../../assets/hexagons.svg";
 
 const Proyectos: React.FC = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="proyectos">
       <div className="container">
         <h1>Proyectos</h1>
       </div>

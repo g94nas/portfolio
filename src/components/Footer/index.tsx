@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { ReactComponent as Hexagon } from "../../assets/hexagons.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Footer: React.FC = () => {
   return (
     <MainWrapper>
       <div>
-        <LinkButton to="/">Volver Hacia Arriba</LinkButton>
+        <LinkButton to="home" offset={-80}>
+          Volver Hacia Arriba
+        </LinkButton>
         <div></div>
         <h1>GN</h1>
       </div>
