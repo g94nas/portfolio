@@ -175,6 +175,14 @@ const MainWrapper = styled.div<{ bg?: any }>`
       margin-left: 1.5rem;
       text-decoration: none;
       fill: #000;
+      transition: ease-in-out 0.2s all;
+
+      &:hover {
+        width: 35px;
+        height: 35px;
+        fill: #047469;
+        transition: ease-in-out 0.2s all;
+      }
     }
   }
 `;

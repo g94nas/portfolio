@@ -11,9 +11,9 @@ const Hero: React.FC = () => {
         <div className="hero-first-half">
           <h1>Guido Nasini</h1>
           <h2>
-            Soy un front-end developer autodidacta de Argentina orientado al
-            desarrollo y a la creación de web apps con interfaces limpias y
-            experiencias de usuario memorables.
+            Soy un front-end developer autodidacta orientado al desarrollo de
+            web apps con interfaces limpias y experiencias de usuario
+            memorables.
           </h2>
           <button>
             <div>
@@ -67,20 +67,18 @@ const MainWrapper = styled.div`
       font-family: "Calibri Light";
       font-weight: 300;
       margin-bottom: 1.5rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
 
     button {
       display: flex;
       align-items: center;
+      width: 225px;
       border: none;
       font-family: "Neutra";
       background-color: #fff;
-      bottom: 13rem;
       border-radius: 2px;
-      min-height: 3rem;
-      position: absolute;
-      padding: 0.5em 2em 0.5em 6em;
+      height: 3rem;
       border-radius: 4px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       cursor: pointer;
@@ -93,15 +91,13 @@ const MainWrapper = styled.div`
       }
 
       div {
-        width: 3.3rem;
+        width: 3rem;
         height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
         background-color: #047469;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 1.3rem;
         border-radius: 3px;
 
         svg {
@@ -174,6 +170,7 @@ const MainWrapper = styled.div`
 `;
 
 const ButtonLink = styled(Link)`
+  display: flex;
   text-decoration: none;
   margin: 0;
   font-size: 1.5rem;
