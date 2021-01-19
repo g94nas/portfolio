@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
+import { FaBars } from "react-icons/fa";
+import Sidebar from "../Sidebar";
 
 const Header: React.FC = () => {
   const [shadowOnScroll, setShadowOnScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const addShadowOnScroll = () => {
     if (window.scrollY >= 80) {
@@ -19,27 +22,34 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <MainWrapper>
-      <div className={shadowOnScroll ? "active" : "container"}>
-        <div className="first-half">
-          <LogoScroll to="home">GN</LogoScroll>
-        </div>
-        <div className="second-half">
-          <LinkScroll to="home" offset={-80}>
-            HOME
-          </LinkScroll>
-          <LinkScroll to="sobre-mi" offset={-120}>
-            SOBRE MI
-          </LinkScroll>
-          <LinkScroll to="proyectos" offset={-80}>
-            PROYECTOS
-          </LinkScroll>
-          <LinkScroll to="contacto" offset={-200}>
-            CONTACTO
-          </LinkScroll>
-        </div>
-      </div>
-    </MainWrapper>
+    <>
+      {isOpen ? (
+        <Sidebar setIsOpen={setIsOpen} />
+      ) : (
+        <MainWrapper>
+          <div className={shadowOnScroll ? "active" : "container"}>
+            <div className="first-half">
+              <LogoScroll to="home">GN</LogoScroll>
+            </div>
+            <div className="second-half">
+              <FaBars onClick={() => setIsOpen(true)} />
+              <LinkScroll to="home" offset={-80}>
+                HOME
+              </LinkScroll>
+              <LinkScroll to="sobre-mi" offset={-120}>
+                SOBRE MI
+              </LinkScroll>
+              <LinkScroll to="proyectos" offset={-80}>
+                PROYECTOS
+              </LinkScroll>
+              <LinkScroll to="contacto" offset={-160}>
+                CONTACTO
+              </LinkScroll>
+            </div>
+          </div>
+        </MainWrapper>
+      )}
+    </>
   );
 };
 
@@ -95,6 +105,25 @@ const MainWrapper = styled.div`
     flex: 0.5;
     align-self: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    svg {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        font-size: 5rem;
+        color: #047469;
+        align-self: flex-end;
+        margin-top: 3.3rem;
+        cursor: pointer;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 `;
 
@@ -114,6 +143,10 @@ const LogoScroll = styled(Link)`
     transition: 0.3s;
     transform: translateY(-5px);
     color: #047469;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
   }
 `;
 

@@ -195,6 +195,7 @@ const MainWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
       box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.18);
+      width: 95%;
     }
   }
 

@@ -33,8 +33,13 @@ const MainWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 10rem 2rem;
+    margin: 12rem 7rem;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 768px) {
+      margin: 12rem 2rem;
+      margin-bottom: 5rem;
+    }
 
     h1 {
       position: relative;

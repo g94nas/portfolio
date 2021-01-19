@@ -9,10 +9,16 @@ const ContenidoProyectos: React.FC = () => {
     <MainWrapper>
       <div className="container-content">
         <div className="container-left">
-          <div>
-            <div></div>
-            <img src={Productivia} alt="Productivia background" />
-          </div>
+          <a
+            href="https://productivia.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              <div></div>
+              <img src={Productivia} alt="Productivia background" />
+            </div>
+          </a>
         </div>
         <div className="container-right">
           <h2>Productivia</h2>
@@ -122,7 +128,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
         }
         @media screen and (max-width: 768px) {
           z-index: 0;
-          background-color: rgba(241, 241, 241, 0.91);
+          background-color: rgba(241, 241, 241, 0.71);
         }
       }
     }
@@ -181,7 +187,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
       font-family: "Calibri";
       font-weight: 600;
       color: #000;
-      top: 18%;
+      top: 20%;
     }
   }
 
