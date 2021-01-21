@@ -27,22 +27,52 @@ const Header: React.FC = () => {
         <Sidebar setIsOpen={setIsOpen} />
       ) : (
         <MainWrapper>
-          <div className={shadowOnScroll ? "active" : "container"}>
+          <div
+            className={shadowOnScroll ? "active active-scroll" : "container"}
+          >
             <div className="first-half">
               <LogoScroll to="home">GN</LogoScroll>
             </div>
             <div className="second-half">
               <FaBars onClick={() => setIsOpen(true)} />
-              <LinkScroll to="home" offset={-80}>
+              <LinkScroll
+                activeClass="active-scroll"
+                spy={true}
+                to="home"
+                duration={500}
+                smooth={true}
+                offset={-500}
+              >
                 HOME
               </LinkScroll>
-              <LinkScroll to="sobre-mi" offset={-120}>
+              <LinkScroll
+                activeClass="active-scroll"
+                spy={true}
+                to="sobre-mi"
+                duration={500}
+                smooth={true}
+                offset={-80}
+              >
                 SOBRE MI
               </LinkScroll>
-              <LinkScroll to="proyectos" offset={-80}>
+              <LinkScroll
+                activeClass="active-scroll"
+                spy={true}
+                to="proyectos"
+                duration={500}
+                smooth={true}
+                offset={-80}
+              >
                 PROYECTOS
               </LinkScroll>
-              <LinkScroll to="contacto" offset={-160}>
+              <LinkScroll
+                activeClass="active-scroll"
+                spy={true}
+                to="contacto"
+                duration={500}
+                smooth={true}
+                offset={-160}
+              >
                 CONTACTO
               </LinkScroll>
             </div>
@@ -90,6 +120,10 @@ const MainWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
       padding: 0 1rem;
+    }
+
+    .active-scroll {
+      color: #047469;
     }
   }
 
