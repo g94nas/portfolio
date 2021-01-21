@@ -255,11 +255,18 @@ const MainWrapper = styled.div<{ bg?: any }>`
       margin-left: 1.5rem;
       text-decoration: none;
       fill: #000;
+      transition: 0.5s;
 
       @media screen and (max-width: 768px) {
         margin-right: 1rem;
         margin-left: 1rem;
         margin-top: -3rem;
+      }
+
+      &:hover {
+        fill: #047469;
+        transform: rotate(360deg);
+        transition: 0.5s;
       }
     }
   }
