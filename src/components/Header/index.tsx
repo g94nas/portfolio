@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                 to="home"
                 duration={500}
                 smooth={true}
-                offset={-500}
+                offset={-200}
               >
                 HOME
               </LinkScroll>

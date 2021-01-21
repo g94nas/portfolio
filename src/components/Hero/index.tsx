@@ -19,7 +19,9 @@ const Hero: React.FC = () => {
             <div>
               <RiSendPlaneFill />
             </div>
-            <ButtonLink to="contacto">Contactame</ButtonLink>
+            <ButtonLink to="contacto" smooth={true} duration={500} offset={80}>
+              Contactame
+            </ButtonLink>
           </button>
         </div>
         <div className="hero-second-half">
