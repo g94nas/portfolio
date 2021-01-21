@@ -195,6 +195,7 @@ const LinkScroll = styled(Link)`
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
+  margin-left: 2.2rem;
 
   &:hover {
     transition: 0.3s;
