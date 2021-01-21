@@ -139,6 +139,7 @@ const MainWrapper = styled.div`
     flex: 0.5;
     align-self: center;
     justify-content: space-evenly;
+    margin-bottom: 0.5rem;
 
     @media screen and (max-width: 768px) {
       justify-content: flex-end;
@@ -151,7 +152,7 @@ const MainWrapper = styled.div`
         font-size: 5rem;
         color: #047469;
         align-self: flex-end;
-        margin-top: 3.3rem;
+        margin-top: 4.35rem;
         cursor: pointer;
       }
       @media screen and (min-width: 768px) {
@@ -168,7 +169,7 @@ const LogoScroll = styled(Link)`
   border: 6px solid #047469;
   padding: 0.3rem;
   text-decoration: none;
-  margin-top: 4rem;
+  margin-top: 4.7rem;
   margin-left: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
@@ -190,7 +191,7 @@ const LinkScroll = styled(Link)`
   flex-direction: row;
   text-decoration: none;
   font-size: 1.3rem;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
