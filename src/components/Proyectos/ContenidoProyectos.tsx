@@ -189,6 +189,17 @@ const MainWrapper = styled.div<{ bg?: any }>`
       color: #000;
       top: 20%;
     }
+
+    @media screen and (max-width: 360px) {
+      width: 95%;
+      box-shadow: -7px 11px 10px rgba(0, 0, 0, 0.15);
+      font-size: 0.8rem;
+      background-color: rgba(241, 241, 241, 0.91);
+      font-family: "Calibri";
+      font-weight: 600;
+      color: #000;
+      top: 25%;
+    }
   }
 
   .button-div {
@@ -219,6 +230,12 @@ const MainWrapper = styled.div<{ bg?: any }>`
     @media screen and (max-width: 768px) {
       margin-right: 1rem;
       font-size: 0.9rem;
+      box-shadow: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
       box-shadow: none;
     }
   }
