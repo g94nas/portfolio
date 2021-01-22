@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { AiFillFolderOpen } from "react-icons/ai";
 import { ReactComponent as Hexagons } from "../../assets/hexagons.svg";
 
 const Hero: React.FC = () => {
@@ -15,14 +16,27 @@ const Hero: React.FC = () => {
             web apps con interfaces limpias y experiencias de usuario
             memorables.
           </h2>
-          <button>
-            <div>
-              <RiSendPlaneFill />
-            </div>
-            <ButtonLink to="contacto" smooth={true} duration={500} offset={80}>
-              Contactame
-            </ButtonLink>
-          </button>
+          <div className="button-container">
+            <button className="button-main">
+              <div className="div-plane">
+                <RiSendPlaneFill />
+              </div>
+              <ButtonLink
+                to="contacto"
+                smooth={true}
+                duration={500}
+                offset={80}
+              >
+                Contactame
+              </ButtonLink>
+            </button>
+            <button className="button-main">
+              <div className="div-folder">
+                <AiFillFolderOpen />
+              </div>
+              <p>Curriculum</p>
+            </button>
+          </div>
         </div>
         <div className="hero-second-half">
           <Hexagons />
@@ -90,7 +104,7 @@ const MainWrapper = styled.div`
       }
     }
 
-    button {
+    .button-main {
       display: flex;
       align-items: center;
       width: 225px;
@@ -104,6 +118,7 @@ const MainWrapper = styled.div`
       cursor: pointer;
       transition: 0.5s;
       outline: none;
+      margin-right: 2rem;
 
       &:hover {
         transform: translateY(-7px);
@@ -118,32 +133,73 @@ const MainWrapper = styled.div`
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
       }
 
-      div {
-        width: 3rem;
-        height: 100%;
-        background-color: #047469;
+      p {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 1.3rem;
-        border-radius: 3px;
-        justify-self: flex-start;
+        margin: 0;
+        font-size: 1.5rem;
+        color: #000;
 
         @media screen and (max-width: 768px) {
-          width: 30px;
+          font-size: 1rem;
         }
+      }
+    }
 
-        svg {
-          display: flex;
-          justify-content: center;
-          fill: #fff;
-          width: 2rem;
-          height: 2rem;
+    .div-plane {
+      width: 3rem;
+      height: 100%;
+      background-color: #047469;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.1rem;
+      border-radius: 3px;
+      justify-self: flex-start;
 
-          @media screen and (max-width: 768px) {
-            width: 1.5rem;
-            height: 1.5rem;
-          }
+      @media screen and (max-width: 768px) {
+        width: 30px;
+      }
+
+      svg {
+        display: flex;
+        justify-content: center;
+        fill: #fff;
+        width: 2rem;
+        height: 2rem;
+
+        @media screen and (max-width: 768px) {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    .div-folder {
+      width: 3rem;
+      height: 100%;
+      background-color: #047469;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.5rem;
+      border-radius: 3px;
+      justify-self: flex-start;
+
+      @media screen and (max-width: 768px) {
+        width: 30px;
+        margin-right: 1.3rem;
+      }
+
+      svg {
+        display: flex;
+        justify-content: center;
+        fill: #fff;
+        width: 2rem;
+        height: 2rem;
+
+        @media screen and (max-width: 768px) {
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
     }
@@ -184,6 +240,11 @@ const MainWrapper = styled.div`
         height: 100px;
       }
     }
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
   }
 `;
 
