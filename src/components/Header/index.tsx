@@ -149,10 +149,10 @@ const MainWrapper = styled.div`
     svg {
       @media screen and (max-width: 768px) {
         display: flex;
-        font-size: 5rem;
+        font-size: 3rem;
         color: #047469;
         align-self: flex-end;
-        margin-top: 4.35rem;
+        margin-top: 4rem;
         cursor: pointer;
       }
       @media screen and (min-width: 768px) {
@@ -169,7 +169,7 @@ const LogoScroll = styled(Link)`
   border: 6px solid #047469;
   padding: 0.3rem;
   text-decoration: none;
-  margin-top: 4.7rem;
+  margin-top: 4.4rem;
   margin-left: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
@@ -182,6 +182,7 @@ const LogoScroll = styled(Link)`
 
   @media screen and (max-width: 768px) {
     margin-left: 0;
+    border: none;
   }
 `;
 
@@ -191,7 +192,7 @@ const LinkScroll = styled(Link)`
   flex-direction: row;
   text-decoration: none;
   font-size: 1.3rem;
-  margin-top: 4.5rem;
+  margin-top: 4.1rem;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
