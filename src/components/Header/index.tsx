@@ -152,7 +152,8 @@ const MainWrapper = styled.div`
         font-size: 3rem;
         color: #047469;
         align-self: flex-start;
-        margin-top: 4rem;
+        margin-top: 3.5rem;
+        background: transparent;
         cursor: pointer;
       }
       @media screen and (min-width: 768px) {
