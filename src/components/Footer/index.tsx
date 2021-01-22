@@ -71,6 +71,10 @@ const MainWrapper = styled.div`
         color: #000;
         transition: 0.4s;
       }
+
+      @media screen and (max-width: 768px) {
+        border: none;
+      }
     }
 
     div {
