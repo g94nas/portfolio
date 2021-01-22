@@ -137,9 +137,13 @@ const MainWrapper = styled.div`
       @media screen and (max-width: 768px) {
         justify-content: flex-start;
         justify-self: center;
-        width: 155px;
+        width: 130px;
         height: 2rem;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      }
+
+      @media screen and (max-width: 300px) {
+        display: none;
       }
 
       p {
@@ -167,6 +171,7 @@ const MainWrapper = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 30px;
+        margin-right: 0.4rem;
       }
 
       svg {
@@ -196,7 +201,7 @@ const MainWrapper = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 30px;
-        margin-right: 1.3rem;
+        margin-right: 0.6rem;
       }
 
       svg {

@@ -151,7 +151,7 @@ const MainWrapper = styled.div`
         display: flex;
         font-size: 3rem;
         color: #047469;
-        align-self: flex-end;
+        align-self: flex-start;
         margin-top: 4rem;
         cursor: pointer;
       }
@@ -173,6 +173,7 @@ const LogoScroll = styled(Link)`
   margin-left: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
+  background: transparent;
 
   &:hover {
     transition: 0.3s;
