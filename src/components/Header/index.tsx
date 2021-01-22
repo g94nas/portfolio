@@ -152,7 +152,7 @@ const MainWrapper = styled.div`
         font-size: 3rem;
         color: #047469;
         align-self: flex-start;
-        margin-top: 3.5rem;
+        margin-top: 3.35rem;
         background: transparent;
         cursor: pointer;
       }
