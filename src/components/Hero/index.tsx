@@ -1,3 +1,5 @@
+//@ts-ignore
+
 import React from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
@@ -30,12 +32,19 @@ const Hero: React.FC = () => {
                 Contactame
               </ButtonLink>
             </button>
-            <button className="button-main">
-              <div className="div-folder">
-                <AiFillFolderOpen />
-              </div>
-              <p>Curriculum</p>
-            </button>
+            <a
+              style={{ textDecoration: "none" }}
+              href="/pdf/curriculum.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="button-main">
+                <div className="div-folder">
+                  <AiFillFolderOpen />
+                </div>
+                <p>Curriculum</p>
+              </button>
+            </a>
           </div>
         </div>
         <div className="hero-second-half">
