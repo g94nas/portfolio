@@ -10,16 +10,40 @@ const Sidebar: React.FC<IProps> = ({ setIsOpen }) => {
   return (
     <MainWrapper style={{ height: viewHeight }}>
       <MdClose onClick={() => setIsOpen(false)} />
-      <LinkScroll to="home" offset={-80} onClick={() => setIsOpen(false)}>
+      <LinkScroll
+        to="home"
+        offset={-80}
+        smooth={true}
+        duration={500}
+        onClick={() => setIsOpen(false)}
+      >
         HOME
       </LinkScroll>
-      <LinkScroll to="sobre-mi" offset={-120} onClick={() => setIsOpen(false)}>
+      <LinkScroll
+        to="sobre-mi"
+        offset={-120}
+        smooth={true}
+        duration={500}
+        onClick={() => setIsOpen(false)}
+      >
         SOBRE MI
       </LinkScroll>
-      <LinkScroll to="proyectos" offset={-80} onClick={() => setIsOpen(false)}>
+      <LinkScroll
+        to="proyectos"
+        offset={-80}
+        smooth={true}
+        duration={500}
+        onClick={() => setIsOpen(false)}
+      >
         PROYECTOS
       </LinkScroll>
-      <LinkScroll to="contacto" offset={-160} onClick={() => setIsOpen(false)}>
+      <LinkScroll
+        to="contacto"
+        offset={-160}
+        smooth={true}
+        duration={500}
+        onClick={() => setIsOpen(false)}
+      >
         CONTACTO
       </LinkScroll>
     </MainWrapper>

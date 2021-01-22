@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const addShadowOnScroll = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 60) {
       setShadowOnScroll(true);
     } else {
       setShadowOnScroll(false);
