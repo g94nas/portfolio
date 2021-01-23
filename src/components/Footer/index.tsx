@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <MainWrapper>
       <div>
-        <LinkButton to="home" offset={-80}>
+        <LinkButton to="home" offset={-80} smooth={true} duration={500}>
           Volver Hacia Arriba
         </LinkButton>
         <div></div>
@@ -60,17 +60,8 @@ const MainWrapper = styled.div`
       padding: 0.3rem;
       text-decoration: none;
       margin-top: 3rem;
-      transition: 0.4s;
       cursor: pointer;
       margin-bottom: 4rem;
-
-      &:hover {
-        font-size: 2.75rem;
-        padding: 0.75rem;
-        border: 7px solid #000;
-        color: #000;
-        transition: 0.4s;
-      }
 
       @media screen and (max-width: 768px) {
         border: none;
