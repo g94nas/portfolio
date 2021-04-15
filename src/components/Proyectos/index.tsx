@@ -6,7 +6,7 @@ const Proyectos: React.FC = () => {
   return (
     <MainWrapper id="proyectos">
       <div className="container">
-        <h1>Proyectos</h1>
+        <h1>Projects</h1>
       </div>
       <Hexagon />
     </MainWrapper>

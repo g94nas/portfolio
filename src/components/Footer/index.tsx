@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <MainWrapper>
       <div>
         <LinkButton to="home" offset={-80} smooth={true} duration={500}>
-          Volver Hacia Arriba
+          Back to Top
         </LinkButton>
         <div></div>
         <h1>GN</h1>

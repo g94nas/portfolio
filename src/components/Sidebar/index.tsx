@@ -26,7 +26,7 @@ const Sidebar: React.FC<IProps> = ({ setIsOpen }) => {
         duration={500}
         onClick={() => setIsOpen(false)}
       >
-        SOBRE MI
+        ABOUT ME
       </LinkScroll>
       <LinkScroll
         to="proyectos"
@@ -35,7 +35,7 @@ const Sidebar: React.FC<IProps> = ({ setIsOpen }) => {
         duration={500}
         onClick={() => setIsOpen(false)}
       >
-        PROYECTOS
+        PROJECTS
       </LinkScroll>
       <LinkScroll
         to="contacto"
@@ -44,7 +44,7 @@ const Sidebar: React.FC<IProps> = ({ setIsOpen }) => {
         duration={500}
         onClick={() => setIsOpen(false)}
       >
-        CONTACTO
+        CONTACT
       </LinkScroll>
     </MainWrapper>
   );

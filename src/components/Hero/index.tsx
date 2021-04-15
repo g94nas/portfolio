@@ -14,9 +14,8 @@ const Hero: React.FC = () => {
         <div className="hero-first-half">
           <h1>Guido Nasini</h1>
           <h2>
-            Soy un front-end developer autodidacta orientado al desarrollo de
-            web apps con interfaces limpias y experiencias de usuario
-            memorables.
+            I’m a Fullstack Developer based on Argentina who loves creating
+            clean and intuitive web apps.
           </h2>
           <div className="button-container">
             <button className="button-main">
@@ -29,12 +28,12 @@ const Hero: React.FC = () => {
                 duration={500}
                 offset={80}
               >
-                Contactame
+                Contact Me
               </ButtonLink>
             </button>
             <a
               style={{ textDecoration: "none" }}
-              href="/pdf/curriculum.pdf"
+              href="/pdf/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +41,7 @@ const Hero: React.FC = () => {
                 <div className="div-folder">
                   <AiFillFolderOpen />
                 </div>
-                <p>Curriculum</p>
+                <p>Resume</p>
               </button>
             </a>
           </div>

@@ -32,14 +32,14 @@ const Contacto: React.FC = () => {
   return (
     <MainWrapper id="contacto">
       <div className="text-container">
-        <h1>Contacto</h1>
+        <h1>Contact</h1>
         <Hexagon />
       </div>
       <div className="container">
         <form onSubmit={sendEmail} className="form-container">
           <div className="info-container">
             <div className="info-container-fhalf">
-              <label htmlFor="Nombre Completo">Nombre Completo</label>
+              <label htmlFor="Nombre Completo">Full Name</label>
               <input type="text" name="name" required></input>
             </div>
             <div className="info-container-fhalf">
@@ -48,14 +48,14 @@ const Contacto: React.FC = () => {
             </div>
           </div>
           <div className="text-container">
-            <label htmlFor="Mensaje">Mensaje</label>
+            <label htmlFor="Mensaje">Body</label>
             <textarea name="message" required></textarea>
           </div>
           <button type="submit">
             <div>
               <RiSendPlaneFill />
             </div>
-            <p>Enviar</p>
+            <p>Send</p>
           </button>
         </form>
       </div>

@@ -53,7 +53,7 @@ const Header: React.FC = () => {
                 smooth={true}
                 offset={-80}
               >
-                SOBRE MI
+                ABOUT ME
               </LinkScroll>
               <LinkScroll
                 activeClass="active-scroll"
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                 smooth={true}
                 offset={-80}
               >
-                PROYECTOS
+                PROJECTS
               </LinkScroll>
               <LinkScroll
                 activeClass="active-scroll"
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                 smooth={true}
                 offset={-160}
               >
-                CONTACTO
+                CONTACT
               </LinkScroll>
             </div>
           </div>

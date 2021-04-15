@@ -6,12 +6,12 @@ const SobreMi = () => {
   return (
     <MainWrapper id="sobre-mi">
       <div>
-        <h1>Sobre Mí</h1>
+        <h1>About Me</h1>
         <h2>
-          Soy un front-end developer autodidacta apasionado por el aprendizaje y
-          el desarrollo. Actualmente disfruto del uso de React y Redux para la
-          creación de web apps. Me encuentro estudiando Typescript, y a futuro
-          quiero incursionar en el mundo del backend.{" "}
+          I'm a self-taught Fullstack developer from Argentina with a passion
+          for learning and developing web apps. I've experience with React |
+          Next | GraphQL | CSS | HTML | MongoDb | Node. I'm focused on learning
+          more about SQL, AWS, Typescript and improving my testing abilities.{" "}
         </h2>
       </div>
       <Hexagons />

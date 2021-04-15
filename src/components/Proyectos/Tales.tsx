@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components/macro";
 import { GoMarkGithub } from "react-icons/go";
 import { IoMdOpen } from "react-icons/io";
-import Productivia from "../../assets/Productivia.jpg";
+import FiveTales from "../../assets/5tales.jpg";
 
-const ContenidoProyectos: React.FC = () => {
+const Tales: React.FC = () => {
   return (
     <MainWrapper>
       <div className="container-content">
@@ -16,33 +16,34 @@ const ContenidoProyectos: React.FC = () => {
           >
             <div>
               <div></div>
-              <img src={Productivia} alt="Productivia background" />
+              <img src={FiveTales} alt="500Tales background" />
             </div>
           </a>
         </div>
         <div className="container-right">
-          <h2>Productivia</h2>
+          <h2>500Tales - In Progress</h2>
           <div className="higher-text">
-            Productivia is the first web app I built. It is a
-            productivity-oriented app focused on maximizing productivity by
-            providing the users with proven tools like flashcards, to-do lists
-            ,and pomodoro clocks in a clean and cluter-free environment.
+            500Tales is a social media app dedicated to the art of short
+            fiction. Users can share tales up to 500 words long, follow other
+            authors, comment on the stories of others and much more. It's the
+            largest project I've worked on and it will be deployed as soon as I
+            finish it making it responsive.
           </div>
           <div className="button-div">
-            <button className="button-1">React.js</button>
-            <button className="button-1">Redux TK</button>
-            <button className="button-1">Firebase</button>
+            <button className="button-1">GraphQL</button>
+            <button className="button-1">Next.js</button>
+            <button className="button-1">MongoDB</button>
           </div>
           <div className="icons-div">
-            <a
+            {/* <a
               href="https://productivia.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <IoMdOpen />
-            </a>
+            </a> */}
             <a
-              href="https://github.com/gnasini/productivia"
+              href="https://github.com/nasgui/social-media-app-client"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,14 +56,14 @@ const ContenidoProyectos: React.FC = () => {
   );
 };
 
-export default ContenidoProyectos;
+export default Tales;
 
 const MainWrapper = styled.div<{ bg?: any }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 7rem 2rem 7rem;
+  margin: 6rem 7rem 2rem 7rem;
 
   @media screen and (max-width: 768px) {
     margin: 0 2rem 2rem 2rem;
@@ -70,7 +71,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
 
   .container-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -82,9 +83,10 @@ const MainWrapper = styled.div<{ bg?: any }>`
 
   .container-left {
     display: flex;
+
     flex: 0.55;
     width: 100%;
-    height: 400px;
+    height: 440px;
 
     @media screen and (max-width: 768px) {
       flex: 1;
@@ -110,7 +112,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
           width: 100%;
           overflow: hidden;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
         }
       }
 
@@ -139,6 +141,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex: 0.45;
     flex-direction: column;
     width: 100%;
@@ -152,7 +155,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
 
     h2 {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: flex-start;
       font-size: 2rem;
       color: #047469;
@@ -172,6 +175,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
     position: absolute;
     top: 20%;
     right: 0;
+    left: 0;
     padding: 0.5rem;
     font-family: "Calibri";
     font-weight: 300;
@@ -207,7 +211,7 @@ const MainWrapper = styled.div<{ bg?: any }>`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 6rem;
     width: 100%;
   }
@@ -226,16 +230,16 @@ const MainWrapper = styled.div<{ bg?: any }>`
     font-size: 1rem;
     font-family: "Neutra";
     box-shadow: -7px 11px 15px rgba(0, 0, 0, 0.25);
-    margin-left: 1rem;
+    margin-right: 1rem;
 
     @media screen and (max-width: 768px) {
-      margin-right: 1rem;
+      margin-left: 1rem;
       font-size: 0.9rem;
       box-shadow: none;
     }
 
     @media screen and (max-width: 768px) {
-      margin-right: 0.5rem;
+      margin-left: 0.5rem;
       font-size: 0.8rem;
       box-shadow: none;
     }
@@ -244,16 +248,17 @@ const MainWrapper = styled.div<{ bg?: any }>`
   .icons-div {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 
     svg {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       width: 30px;
       height: 30px;
       cursor: pointer;
-      margin-left: 1.5rem;
+      margin-right: 1.5rem;
       text-decoration: none;
       fill: #000;
       transition: 0.5s;
